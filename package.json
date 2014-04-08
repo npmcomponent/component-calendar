@@ -1,5 +1,5 @@
 {
-  "name": "calendar-component",
+  "name": "component-calendar",
   "description": "Calendar component",
   "version": "0.1.0",
   "keywords": [
@@ -7,39 +7,22 @@
     "date",
     "ui"
   ],
+  "styles": [
+    "lib/calendar.css"
+  ],
   "dependencies": {
-    "domify": "1.0.0",
-    "emitter-component": "1.0.1",
-    "classes-component": "1.1.3",
-    "range-component": "1.0.0",
-    "in-groups-of": "component/in-groups-of#1.0.0",
-    "event-component": "~0.1.0"
+    "code42day-bounds": "git://github.com/npmcomponent/code42day-bounds.git",
+    "component-bind": "git://github.com/npmcomponent/component-bind.git",
+    "component-domify": "git://github.com/npmcomponent/component-domify.git",
+    "component-classes": "git://github.com/npmcomponent/component-classes.git",
+    "component-event": "git://github.com/npmcomponent/component-event.git",
+    "component-map": "git://github.com/npmcomponent/component-map.git",
+    "component-range": "git://github.com/npmcomponent/component-range.git",
+    "component-emitter": "git://github.com/npmcomponent/component-emitter.git",
+    "component-in-groups-of": "git://github.com/npmcomponent/component-in-groups-of.git",
+    "component-type": "git://github.com/npmcomponent/component-type.git",
+    "yields-empty": "git://github.com/npmcomponent/yields-empty.git",
+    "stephenmathieson-normalize": "git://github.com/npmcomponent/stephenmathieson-normalize.git"
   },
-  "browser": {
-    "event": "event-component",
-    "emitter": "emitter-component",
-    "classes": "classes-component",
-    "range": "range-component"
-  },
-  "component": {
-    "styles": [
-      "lib/calendar.css"
-    ],
-    "scripts": {
-      "calendar/index.js": "index.js",
-      "calendar/lib/utils.js": "lib/utils.js",
-      "calendar/lib/template.js": "lib/template.js",
-      "calendar/lib/calendar.js": "lib/calendar.js",
-      "calendar/lib/days.js": "lib/days.js"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/component/calendar.git"
-  },
-  "devDependencies": {
-    "mocha": "~1",
-    "bounds": "~1.0.0",
-    "type-component": "0.0.1"
-  }
+  "license": "MIT"
 }
